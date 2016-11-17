@@ -1,0 +1,540 @@
+/* CSS Document */
+body {
+	width: 1160px;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 0.813rem; /* Content 13px */
+    line-height: 1.65;
+	color: #333;
+	background-color: #fff; /* Fallback for when there is no custom background color defined. */
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;	
+}
+
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	line-height: 1.1;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	color: #333;
+}
+h1, h2, h3 {
+  margin-bottom: 16px;
+}
+h4, h5, h6 {
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 1.938rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.375rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.875rem;
+}
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+	font-weight: 400;
+}
+.display-4 {
+	font-size: 2.688rem;
+}
+.display-3 {
+	font-size: 2.25rem;
+}
+.display-2 {
+	font-size: 1.75rem;
+}
+.display-1 {
+	font-size: 1.5rem;
+}
+p {
+    margin: 0 0 1.5rem;
+}
+
+.lead {
+    font-size: 1rem;
+	font-weight:400;
+}
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-muted {
+  color: #818a91;
+}
+.bypostauthor {}
+
+.dropcap {
+    font-family: Palatino, Georgia,serif;
+    font-size: 4.750rem;
+	font-style: italic;
+	font-weight: 600;
+    line-height: .8;
+    display: inline-block;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+code {
+    padding: 3px 8px;
+    font-size: 95%;
+    color: #bd4147;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+}
+
+kbd {
+    padding: 1px 6px;
+    font-size: 90%;
+    color: #fff;
+    background-color: #333;
+    border-radius: 4px;
+}
+
+kbd kbd {
+  padding: 0;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #818a91;
+}
+
+mark,
+ins {
+	background-color: #FBFBA4;
+	text-decoration: none;
+	padding: 0 5px;
+}
+big {
+	font-size: 125%;
+}
+small {
+  font-size: 80%;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+blockquote {
+	margin: 1.5rem;
+	padding: 0 20px;
+	border-left: 3px solid #b7aa6f;
+	color: #b7aa6f;
+}
+blockquote p {
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+hr {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border: 0;
+  border-top: 1px solid #e8e8e8;
+}
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #818a91;
+}
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+
+
+/* tables */
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: left;
+}
+table thead th,  
+table thead td {
+	color: #222;
+	background: #e6e6e6;
+}
+caption, th {
+    font-size: 0.813rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+th, td {
+    padding: 8px 12px;
+}
+tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+
+/*--------------------------------------------------------------
+# Link Styling
+--------------------------------------------------------------*/
+a,
+a:visited {
+	color: #b8a138;
+	text-decoration: none;
+}
+a:hover {
+	color: #333;
+}
+
+
+
+/*--------------------------------------------------------------
+10.0 Media
+--------------------------------------------------------------*/
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+.alignleft {
+    float: left;
+    margin: 0 4% 2% 0;
+}
+.alignright {
+    float: right;
+    margin: 0 0 2% 4%;
+}
+.aligncenter {
+	display: block;
+    margin: 0 auto 2%;
+}
+.alignnone {
+    float: none;
+    margin: 0 0 2%;
+}
+.figure {
+    display: inline-block;
+}
+figcaption {
+    color: #888;
+	font-style:italic;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+10.1 Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+.wp-caption-text {
+	text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+10.2 Galleries
+--------------------------------------------------------------*/
+
+/* WP Gallery up to 9 columns */
+.gallery {
+   max-width: 100%;
+    margin: 4% 0;
+}
+.gallery img{ /* for Firefox */
+    max-width: 100%;
+	display: block;
+}
+.gallery .gallery-item {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 -5px;
+	padding: 0 1px 0 0;
+    text-align: center;
+}
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+.gallery .gallery-caption {
+	opacity: 0;
+	width: calc(100% - 1px);
+	position: absolute;
+	left: 0;
+    bottom: 0;
+	color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+	padding: 10px;
+	background-color: #beb27a;
+	/* lets create animated captions ending at 10px */
+	-webkit-transform: translateY(10px);
+	-ms-transform: translateY(10px);
+	transform: translateY(10px);
+	-webkit-transition-duration:  .3s;
+	transition-duration:  .3s;
+}
+.gallery-item:hover .gallery-caption {
+	opacity: 1;
+	/* lets create animated captions starting from 0 */
+	-webkit-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+}
+/* Thumbnails are too small so lets hide the captions */
+.gallery-columns-6 .gallery-caption, 
+.gallery-columns-7 .gallery-caption,  
+.gallery-columns-8 .gallery-caption,  
+.gallery-columns-9 .gallery-caption {
+	display: none;
+}
+
+.gallery-icon.landscape {
+    float: left;
+}
+.wp-caption-text {	
+	color: #fff;
+	font-size: 0.813rem;
+	line-height: 1.2;
+	text-align: center;
+	font-style:normal;
+    text-transform: uppercase;
+}
+.wp-caption {
+    max-width: 100%;
+}
+
+
+/* buttons */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.btn {
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-color: #fff;
+	color: #505050;
+	border: 1px solid #c4c4c4;
+	white-space: nowrap;
+	padding: 5px 18px 4px;
+	font-size: 0.813rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.42857143;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: background-color .2s ease-in-out;
+	-moz-transition: background-color .2s ease-in-out;
+	-ms-transition: background-color .2s ease-in-out;
+	-o-transition: background-color .2s ease-in-out;
+	transition: background-color .2s ease-in-out;
+}
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+.btn:focus,
+.btn:active:focus {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+.btn:hover,
+.btn:focus {
+	background-color: #303030;
+	color: #f3f3f3;
+	text-decoration: none;
+	border-color: transparent;
+}
+
+/* Button size */
+.btn-lg {
+	padding: 8px 24px 7px;
+	font-size: 1.125rem;
+	line-height: 1.3333333;
+}
+.btn-sm {
+	padding: 3px 14px;
+	font-size: 0.75rem;
+	line-height: 1.5;
+}
+.btn-xs {
+	padding: 0 12px;
+	font-size: 0.688rem;
+	line-height: 1.5;
+}
+

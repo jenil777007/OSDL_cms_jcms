@@ -1,0 +1,88 @@
+-------------------------------------------------------
+    CHANGELOG
+-------------------------------------------------------
+
+Keep a change log to describe all the changes made to program source files. The purpose of this is so that people investigating 
+bugs in the future will know about the changes that might have introduced the bug. Often a new bug can be found by looking at 
+what was recently changed. More importantly, change logs can help you eliminate conceptual inconsistencies between different 
+parts of a program, by giving you a history of how the conflicting concepts arose and who they came from.
+
+-------------------------------------------------------
+    CHANGELOG Version Numbers
+-------------------------------------------------------
+
+[major].[minor].[patch]
+
+These 3 levels are defined as:
+
+1. An increment in the major version indicates a break in backward compatibility.
+2. An increment in the minor version indicates the addition of new features or a significant change to existing features.
+3. An increment in the patch version indicates that minor features have been changed or bugs have been fixed.
+
+-------------------------------------------------------
+    Changes Made to this Theme
+-------------------------------------------------------
+
+September 18, 2016 - 1.1.6
+--------------------------------------
+- Made adjustments to the image post layout for better responsiveness
+- Made an adjustment to the media queries so that the site doesn't go into mobile mode too soon.
+- Changed the side column and content left margins from pixels to percent widths and margins for more flexibility.
+
+
+September 7, 2016 - 1.1.5
+--------------------------------------
+- Fixed the missing customizer setting to show or hide the featured image from the full post
+- Updated the language file
+
+
+August 22, 2016 - 1.1.4
+--------------------------------------
+- Fixed the image post link to be the full image box and not just the title.
+- Fixed the image post title font size on mobile devices being too large
+
+
+August 14, 2016 - 1.1.3
+--------------------------------------
+- Added setting to the customizer to show or hide the post format label
+- Separated the Show/Hide post meta info for the summaries and full post. Added a new setting for the full post to the Blog Options tab.
+- Added missing footer background colour setting
+- Added basic typography settings to the customizer
+- Added 2 extra Google Font options to the functions file 
+- Updated the morphology-lite.pot language file
+
+
+
+August 2, 2016 - 1.0.3
+--------------------------------------
+- Changed the method of uploading a logo
+- Removed code to add shortcode to text widgets
+- Fixed an excerpt error when doing a search
+- Changed how to limit the excerpt size and added the missing customizer setting for this
+- Updated the morphology-lite.pot language file
+
+
+
+July 26, 2016 - 1.0.2
+--------------------------------------
+- Updated the theme url in the style.css and the customizer info button links to reflect an SSL URL
+
+
+June 26, 2016 - 1.0.1
+--------------------------------------
+- Fixed an unidentified variable in the single.php file.
+- Fixed the Blog Style variable in the home.php file which had a duplicate
+- Updated the style.css tags by removing depreciated tags and adding a couple new ones
+- Removed the Morphology Lite Info page from the Appearance menu
+- Added Refresh Widgets support to the functions file
+- Added a set post thumbnail size to the function file
+- Moved the featured image for pages
+- Fixed the page background size setting - it was missing from the inline styles
+- Made some CSS adjustments
+- Updated the Morphology .pot language file
+- Updated the readme.txt file setup tutorials info
+
+
+January 27, 2016 - 1.0.0
+--------------------------------------
+- Theme Released

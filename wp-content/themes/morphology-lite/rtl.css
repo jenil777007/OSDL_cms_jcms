@@ -1,0 +1,226 @@
+/*
+Theme Name: Morphology Lite
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+/* Base */
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+
+/* Begin Theme Right to Left CSS */
+
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+.dropcap {
+    float: right;
+    margin: 0 0 0 6px;
+}
+
+blockquote {
+	border-left: none;
+	border-right: 3px solid;
+}
+dd {
+  margin-right: 0;
+}
+table {
+    text-align: right;
+}
+
+.entry-meta span:first-child {
+    margin-right: 0;
+}
+.entry-meta span:after {
+    right: 7px;
+}
+
+.image-post .hentry {
+	float: right;
+}
+
+.author-info {
+    margin: 0 85px 0 0 ;
+}
+.author-avatar {
+	float: right;
+}
+
+.comment-wrapper .avatar {
+    float: right;
+    margin: 0 0 0 16px;
+}
+
+.comment-metadata {
+    float: right;
+}
+.comment-edit-link, 
+.comment-reply-link {
+    margin-right: 8px;
+}
+.comment-list li ul.children {
+	padding: 0 40px 0 0;
+}
+.comment-reply-login {
+	margin-right: 10px;
+}
+
+.comment blockquote {
+	padding: 7px 45px 7px 20px;
+}
+.comment blockquote:before {
+	right: 10px;
+}
+
+#footer-wrapper {
+    margin-right: 0;
+}
+.widget .tagcloud a{
+	margin: 0 0 5px 3px;
+}
+
+ #wp-calendar tfoot td {
+    padding: 3px 10px 3px 0;
+}
+.gallery-icon.landscape {
+    float: right;
+}
+
+
+.post-nav-older:after,
+.post-nav-newer:before {
+	font-family: FontAwesome;
+	font-size: 0.813rem;
+	content: "";	
+	content: "\f100";
+	margin-right: 5px;
+}
+.post-nav-newer:after {content: ""}
+.post-nav-older:before {content: ""}
+.post-nav-older:after {
+	content: "\f101";
+	margin: 0 0 0 5px;
+}
+
+
+.post-navigation .nav-previous,
+.comment-navigation .nav-previous {
+  float: right;
+}
+.post-navigation .nav-next,
+.comment-navigation .nav-next {
+  float: left;
+  text-align: left;
+}
+.single .page-links {
+  text-align: right;
+}
+
+/* Mobile Menu */
+.main-navigation.toggled-on ul {
+	text-align:right;
+}
+/* Indent the mobile submenus */
+.main-navigation.toggled-on ul a { width: auto; }
+.main-navigation.toggled-on ul a { padding-right: 1.250rem; }
+.main-navigation.toggled-on ul ul a { padding-right: 2.50rem; }
+.main-navigation.toggled-on ul ul ul a { padding-right: 3.750rem; }
+.main-navigation.toggled-on ul ul ul ul a { padding-right: 5rem; }
+.main-navigation.toggled-on ul ul ul ul ul a { padding-right: 6.250rem; }
+
+/* forms */
+textarea {
+	padding-right: 3px;
+}
+
+.radio label,
+.checkbox label {
+	padding-right: 20px;
+	margin-right: 1px;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+	margin-right: -20px;
+}
+
+/* accessibility */
+
+.screen-reader-text:focus {
+	right: 5px;
+}
+
+/* media queries */
+/* Large devices (desktops, 1088px and up) */
+@media (min-width: 68em) {
+	#landing-half-left,
+	.sidebar {
+		right: 0;
+	}	
+	.site-content {
+		float: right;
+		margin-left:0;
+		margin-right: 300px;
+	}
+	/* Blog Style 5 */
+
+	.blogstyle5 .featured-image-wrapper {
+		float: right;
+	}
+	.blogstyle5 .entry-summary {
+		float: right;
+	}
+	
+	/* We add a carat at the end of any menu link containing a submenu */
+	.main-navigation li.menu-item-has-children > a:after {
+		content: "";
+		margin-left: 0;
+	}
+	.main-navigation li.menu-item-has-children > a:before {
+		margin-left: 0;
+		margin-right: 6px;
+		font-family: 'FontAwesome';
+		content: "\f0d9";
+	}
+	/* When user has hovered the li item, we show the ul list by applying display:block, note: 240px is the individual menu width.  */
+	.main-navigation ul li:hover ul {
+		left:0;
+		right:240px;
+		width:240px;
+	}
+	/* We style the color of level 2 links */
+	.main-navigation ul li ul li a {
+		text-align: right;
+	}
+	/* third level */
+		/* We show the third level menu only when they hover the second level menu parent */
+	.main-navigation ul li:hover ul li:hover ul{
+		right:240px;
+	}
+
+	
+			
+
+	.not-found {
+		margin-left: 0;
+		margin-right: 300px;
+	}
+	
+	#error-overlay {
+		padding: 40px 300px 60px 20px;
+	}	
+
+	
+	
+}	
